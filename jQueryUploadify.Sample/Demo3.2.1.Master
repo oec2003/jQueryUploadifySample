@@ -1,0 +1,449 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Demo3.2.1.master.cs" Inherits="jQueryUploadify.WebForm.Sample.Demo3__2__1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/css/gfonts1.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/font-awesome/css/font-awesome.min.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/simple-line-icons/simple-line-icons.min.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/bootstrap/css/bootstrap.min.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/uniform/css/uniform.default.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/jqvmap/jqvmap/jqvmap.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/plugins/morris/morris.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/css/components.css")%>" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/global/css/plugins.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/admin/layout3/css/layout.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/admin/layout3/css/themes/default.css")%>" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="<%=this.ResolveUrl("~/theme/assets/admin/layout3/css/custom.css")%>" rel="stylesheet" type="text/css" />
+   
+     <link href="<%=this.ResolveUrl("~/scripts/uploadify/uploadify.css")%>" rel="stylesheet" type="text/css" />
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+        <div class="page-header">
+            <!-- BEGIN HEADER TOP -->
+            <div class="page-header-top">
+                <div class="container">
+                    <!-- BEGIN LOGO -->
+                    <div class="page-logo" style="width:400px;">
+                       <h2>jQueryUploadify.Sample 3.2.1</h2>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                    <a href="javascript:;" class="menu-toggler"></a>
+                  
+                </div>
+            </div>
+            <!-- END HEADER TOP -->
+            <!-- BEGIN HEADER MENU -->
+            <div class="page-header-menu">
+                <div class="container">
+                  
+                    <!-- BEGIN MEGA MENU -->
+                    <!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+                    <!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+                    <div class="hor-menu ">
+                        <ul class="nav navbar-nav">
+                         
+                            <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Options <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="min-width: 800px">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <ul class="mega-menu-submenu">
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/auto.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                auto </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/buttonClass.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                buttonClass </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/buttonCursor.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                buttonCursor </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/buttonImage.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                buttonImage </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/buttonText.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                buttonText </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/checkExisting.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                checkExisting </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/debug.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                debug </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/fileObjName.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                fileObjName</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/fileSizeLimit.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                fileSizeLimit </a>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <ul class="mega-menu-submenu">
+                                                      
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/fileTypeDesc.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                fileTypeDesc </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/fileTypeExts.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                fileTypeExts</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/formData.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                formData </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/height.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                height </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/itemTemplate.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                itemTemplate </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/method.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                method </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/multi.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                multi </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/overrideEvents.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                overrideEvents </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/preventCaching.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                preventCaching </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <ul class="mega-menu-submenu">
+                                                       
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/progressData.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                progressData </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/queueID.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                queueID </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/queueSizeLimit.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                queueSizeLimit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/removeCompleted.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                removeCompleted </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/removeTimeout.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                removeTimeout </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/requeueErrors.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                               requeueErrors </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/successTimeout.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                successTimeout </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/swf.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                swf </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/uploader.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                uploader </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <ul class="mega-menu-submenu">
+                                                     
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/uploadLimit.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                uploadLimit </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Options/width.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                               width </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                           
+
+                             <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Events <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="min-width: 400px">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="mega-menu-submenu">
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onCancel.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onCancel </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onClearQueue.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onClearQueue </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onDestroy.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onDestroy </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onDialogClose.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onDialogClose </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onDialogOpen.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onDialogOpen </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onDisable.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onDisable </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onEnable.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onEnable </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onFallback.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onFallback</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onInit.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onInit </a>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="mega-menu-submenu">
+                                                      
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onQueueComplete.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onQueueComplete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onSelect.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onSelect</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onSelectError.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onSelectError </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onSWFReady.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onSWFReady </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onUploadComplete.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onUploadComplete </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onUploadError.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onUploadError </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onUploadProgress.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onUploadProgress </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onUploadStart.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onUploadStart </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Events/onUploadSuccess.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                onUploadSuccess </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                               <li class="menu-dropdown mega-menu-dropdown">
+                                <a data-hover="megamenu-dropdown" data-close-others="true" data-toggle="dropdown" href="javascript:;" class="dropdown-toggle">Methods <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="min-width: 200px">
+                                    <li>
+                                        <div class="mega-menu-content">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <ul class="mega-menu-submenu">
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/cancel.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                cancel </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/destroy.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                destroy </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/disable.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                disable </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/settings.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                settings </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/stop.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                stop </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/Demo3.2.1/Methods/upload.aspx">
+                                                                <i class="fa fa-angle-right"></i>
+                                                                upload </a>
+                                                        </li>
+                                                      
+                                                    </ul>
+                                                </div>
+                                               
+                                               
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MEGA MENU -->
+                </div>
+            </div>
+            <!-- END HEADER MENU -->
+        </div>
+
+        <div class="page-container" style="height:500px;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+       </div>
+    </form>
+
+    <div class="page-footer">
+        <div class="container">
+            2016 &copy; oec2003. All Rights Reserved.
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+
+   
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery-migrate.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/bootstrap/js/bootstrap.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery.blockui.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/jquery.cokie.min.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/plugins/uniform/jquery.uniform.min.js")%>" type="text/javascript"></script>
+   
+    <script src="<%=this.ResolveUrl("~/theme/assets/global/scripts/metronic.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/admin/layout3/scripts/layout.js")%>" type="text/javascript"></script>
+    <script src="<%=this.ResolveUrl("~/theme/assets/admin/layout3/scripts/demo.js")%>" type="text/javascript"></script>
+ 
+ 
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core componets
+            Layout.init(); // init layout
+            Demo.init(); // init demo(theme settings page)
+        });
+    </script>
+
+
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+     </asp:ContentPlaceHolder>
+</body>
+</html>
